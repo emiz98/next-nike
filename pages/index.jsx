@@ -31,15 +31,15 @@ const Home = () => {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
-      <main className="">
-        <section className="relative mx-10">
+      <main className="mx-2">
+        <section className="relative lg:mx-10">
           <img
             className="rounded-lg w-full object-cover"
             src="/assets/5.png"
             alt="hero"
           />
-          <div className="absolute bottom-10 left-10 w-full space-y-5 z-10">
-            <h1 className="text-white text-7xl w-[40rem] font-nike">
+          <div className="absolute bottom-3 left-3 lg:bottom-10 lg:left-10 lg:space-y-5 z-10">
+            <h1 className="text-white text-xl lg:text-7xl font-nike">
               PEACE THROUGH ANY POSE
             </h1>
             <p className="text-white font-bold">
@@ -53,7 +53,7 @@ const Home = () => {
 
         <section className="text-center p-5 font-medium my-10 mx-10">
           <h6 className="text-base">Nike Alate Sports Bras</h6>
-          <h1 className="text-7xl font-nike w-2/3 m-auto">
+          <h1 className="text-4xl lg:text-7xl font-nike w-full lg:w-2/3 m-auto">
             ALL DAY, ALL NEW, ALL YOU
           </h1>
           <p className="mt-3">
@@ -64,7 +64,7 @@ const Home = () => {
           </button>
         </section>
 
-        <section className="my-16 mx-10">
+        <section className="my-16 lg:mx-10">
           <h3 className="font-medium text-2xl mb-8">Featured</h3>
           <div className="grid grid-cols-2 gap-x-5 gap-y-5">
             <Banner img="/assets/4.png" title="Restocked The AF1 '07" />
@@ -77,7 +77,7 @@ const Home = () => {
         </section>
 
         <section className="my-16">
-          <div className="flex items-center justify-between mx-10">
+          <div className="flex items-center justify-between lg:mx-10">
             <h3 className="font-medium text-2xl mb-8">Shop New Releases</h3>
             <div className="flex items-center gap-x-3">
               <ChevronLeftIcon className="carousalBtn" ref={prevRef} />
@@ -89,13 +89,12 @@ const Home = () => {
             autoplay={{ delay: 5000 }}
             speed={1000}
             loop={true}
-            slidesPerView={4}
             className="mySwiper"
+            slidesPerView={3}
           >
             {nike.map(({ image, name, discription, price }, i) => (
-              <SwiperSlide className="p-10">
+              <SwiperSlide className="lg:p-10 p-2" key={i}>
                 <ProductCard
-                  key={i}
                   img={image}
                   title={name}
                   description={discription}
@@ -106,7 +105,7 @@ const Home = () => {
           </Swiper>
         </section>
 
-        <section className="my-16 mx-10">
+        <section className="my-16 lg:mx-10">
           <h3 className="font-medium text-2xl mb-8">Trending</h3>
           <div className="grid grid-cols-2 gap-x-5 gap-y-5">
             <Banner img="/assets/3.png" title="Tees to Rule Summer" />
@@ -114,14 +113,14 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="relative my-16 mx-10">
+        <section className="relative my-16 lg:mx-10">
           <img
             className="rounded-lg w-full object-cover"
             src="/assets/7.png"
             alt="hero"
           />
-          <div className="absolute bottom-10 left-10 w-full space-y-5 z-10">
-            <h1 className="text-white text-7xl w-[40rem] font-nike">
+          <div className="absolute bottom-3 left-3 lg:bottom-10 lg:left-10 lg:space-y-5 z-10">
+            <h1 className="text-white text-3xl lg:text-7xl lg:w-[40rem] font-nike">
               SUMMER TOPS
             </h1>
             <p className="text-white font-bold">Fun tops for her</p>

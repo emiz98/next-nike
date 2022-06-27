@@ -29,13 +29,13 @@ const Header = () => {
   };
   return (
     <header className="bg-white w-full">
-      <div className="flex items-center justify-between bg-gray-100 p-2 px-10 w-full">
+      <div className="flex items-center justify-between bg-gray-100 p-2 px-2 lg:px-10 w-full">
         <img className="w-6" src="nike1.svg" alt="nike_header" />
         <div className="flex items-center gap-x-3 font-medium text-xs headerUpper">
-          <h6>Help</h6>
-          <span>|</span>
-          <h6>Join Us</h6>
-          <span>|</span>
+          <h6 className="hidden md:flex">Help</h6>
+          <span className="hidden md:flex">|</span>
+          <h6 className="hidden md:flex">Join Us</h6>
+          <span className="hidden md:flex">|</span>
           <h5>
             Sign in as <span className="font-bold">Menura Adithya</span>
           </h5>
@@ -56,9 +56,11 @@ const Header = () => {
         exit={{
           translateY: -100,
         }}
-        className={`px-10 group bg-white ${show && "fixed top-0 z-50 w-full"}`}
+        className={`px-2 lg:px-10 group bg-white ${
+          show && "fixed top-0 z-50 w-full"
+        }`}
       >
-        <div className="inline-grid grid-cols-3 w-full">
+        <div className="inline-grid grid-cols-2 md:grid-cols-3 w-full">
           <svg
             className="w-14 h-14 hover:fill-gray-600 cursor-pointer"
             height="60px"
@@ -69,7 +71,7 @@ const Header = () => {
           >
             <path d="M68.56 4L18.4 25.36Q12.16 28 7.92 28q-4.8 0-6.96-3.36-1.36-2.16-.8-5.48t2.96-7.08q2-3.04 6.56-8-1.6 2.56-2.24 5.28-1.2 5.12 2.16 7.52Q11.2 18 14 18q2.24 0 5.04-.72z"></path>
           </svg>
-          <div className="flex items-center gap-x-1 font-medium justify-center headerMiddle">
+          <div className="md:flex items-center gap-x-1 font-medium justify-center headerMiddle hidden">
             <h4>Men</h4>
             <h4>Women</h4>
             <h4>Kids</h4>
@@ -78,7 +80,7 @@ const Header = () => {
             <h4>SNKRS</h4>
           </div>
           <div className="flex items-center gap-x-2 justify-end">
-            <div className="bg-gray-100 rounded-full flex items-center hover:bg-gray-200">
+            <div className="bg-gray-100 rounded-full lg:flex items-center hover:bg-gray-200 hidden">
               <SearchIcon className="headerIcon" />
               <input
                 type="text"
