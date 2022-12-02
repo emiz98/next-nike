@@ -1,23 +1,40 @@
-# Next.js + Tailwind CSS Example
+# Nike 1.0
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+![cover](cover.png)
 
-## Deploy your own
+## Table of Contents
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+- [Introduction](#introduction)
+- [Features](#features)
+- [Build Process](#build-process)
+- [Tech Stack](#tech-stack)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+<br/>
 
-## How to use
+## Introduction
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+![main image](https://cdn.sanity.io/images/1z5g6za5/production/dc42dcd02228816b355bd357eda6e608b9a30ec7-1899x1080.png?w=2000&fit=max&auto=format)
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-# or
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+Nike, Inc. is an American multinational corporation that is engaged in the design, development, manufacturing, and worldwide marketing and sales of footwear, apparel, equipment, accessories, and services.
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+This is a clone of the official nike website which was made only for educational purposes.
+
+## Features
+
+🚀 Animations using framer motion
+
+## Build Process
+
+- Clone or download the repo
+- `npm install` or `yarn` to install dependencies
+- `npm start` or `yarn run dev` to run the application
+
+
+## Tech Stack
+
+<p float="left">
+    <img src="https://cdn.sanity.io/images/1z5g6za5/production/c51f7cd856302f625d5622d91847e184435c00ba-300x300.png?w=2000&fit=max&auto=format" width="60"  style="padding-right:20px"/>
+    <img src="https://cdn.sanity.io/images/1z5g6za5/production/ea0d729f383fe9f113c7d2da95af5a39eecfa226-64x64.png?w=2000&fit=max&auto=format" width="60"  style="padding-right:20px"/>
+    <img src="https://cdn.sanity.io/images/1z5g6za5/production/a734a4e48807516fc191ffc080c03ccf25e1718d-300x300.png?w=2000&fit=max&auto=format" width="60"  style="padding-right:20px"/>
+    <img src="https://cdn.sanity.io/images/1z5g6za5/production/97986d3dd7e897b83e06a41aaf9ee7a8de146685-768x768.png?w=2000&fit=max&auto=format" width="60"  style="padding-right:20px"/>
+</p>
